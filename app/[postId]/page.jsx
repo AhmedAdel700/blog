@@ -1,5 +1,10 @@
 import { Box } from "@mui/material";
 
+export const metadata = {
+  title: "Post Details",
+  description: "Post Details Page",
+};
+
 export default async function PostDetails({ params }) {
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${params.postId}`,

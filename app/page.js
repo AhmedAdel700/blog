@@ -1,6 +1,5 @@
 import Posts from "./components/Posts";
 
-
 export default function Home() {
 
   const style1 = { alignSelf: "flex-start", margin: "1rem 0.5rem 0" }

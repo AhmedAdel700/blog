@@ -2,6 +2,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Link from "next/link";
 
+
 export default async function Posts() {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
     next: {
