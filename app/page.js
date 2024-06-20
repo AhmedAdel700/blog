@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Posts from "./components/Posts";
 
 export default function Home() {
@@ -7,8 +8,13 @@ export default function Home() {
   return (
     <main style={{ display: 'flex', justifyContent: 'center', flexDirection: "column", alignItems: "center" }}>
       <h1 style={style1}>All <span style={{ color: " rgb(238, 164, 80)" }}>Blog</span> Posts</h1>
+
       <hr />
-      <Posts />
+
+      <Suspense fallback={<h1 className="loading">Please Wait...</h1>}>
+        <Posts />
+      </Suspense>
+
     </main>
   );
 }
