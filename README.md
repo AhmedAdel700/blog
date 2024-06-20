@@ -4,7 +4,7 @@
 
 #### **_The Project Is Fully Responsive_**
 
-#### Note: jsonplaceholder Is Used As Requested So In The Create Post Page There Is No Real Submittion For The Data Of The Post.
+#### Note: jsonplaceholder Is Used As Requested So In The Create Post Page So There Is No Real Submittion For The Data Of The Post.
 
 ## Getting Started
 

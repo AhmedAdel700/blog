@@ -51,3 +51,9 @@ hr {
   font-weight: 700;
   text-align: center;
 }
+.error {
+  color: rgb(177, 4, 4);
+  margin-top: 5rem;
+  text-align: center;
+  padding: 0.3rem;
+}
