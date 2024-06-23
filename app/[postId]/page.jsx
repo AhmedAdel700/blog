@@ -1,4 +1,5 @@
 import { Box } from "@mui/material";
+import { notFound } from "next/navigation";
 
 export const metadata = {
   title: "Post Details",
@@ -6,6 +7,10 @@ export const metadata = {
 };
 
 export default async function PostDetails({ params }) {
+  if (isNaN(params.postId) || params.postId > 100) {
+    notFound();
+  }
+
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${params.postId}`,
     {
