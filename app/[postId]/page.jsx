@@ -18,6 +18,10 @@ export default async function PostDetails({ params }) {
     }
   );
 
+  if (!response.ok) {
+    throw new Error("Could not find post " + params.postId);
+  }
+
   const post = await response.json();
 
   return (

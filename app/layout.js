@@ -10,14 +10,29 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+  const linksArray = [
+    {
+      href: "/",
+      text: "Home",
+    },
+    {
+      href: "/create",
+      text: "Create Post",
+    }
+  ];
+
   return (
     <html lang="en">
       <body className={inter.className}>
 
         <nav className="navBar">
 
-          <Link href="/">Home</Link>
-          <Link href="/create">Create Post</Link>
+          {linksArray.map((link) => (
+            <Link key={link.href} href={link.href}>
+              {link.text}
+            </Link>
+          ))}
 
         </nav>
 

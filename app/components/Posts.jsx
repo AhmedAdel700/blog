@@ -10,6 +10,14 @@ export default async function Posts() {
     },
   });
 
+  if (!response.ok) {
+    throw {
+      status: response.status,
+      statusText: response.status,
+      message: response.statusText,
+    }
+  }
+
   const postsArray = await response.json();
 
   const posts = postsArray.map((post) => {

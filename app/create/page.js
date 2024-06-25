@@ -11,6 +11,7 @@ import { Snackbar } from '@mui/material';
 
 
 export default function CreatePost() {
+
     const [formData, setFormData] = useState({
         title: '',
         id: '',
@@ -67,6 +68,7 @@ export default function CreatePost() {
 
         // Show success alert
         setOpenSnackbar(true);
+
     };
 
     const handleChange = (e) => {
@@ -89,6 +91,8 @@ export default function CreatePost() {
         }
         setOpenSnackbar(false);
     };
+
+
 
     return (
         <div style={{ width: '100%' }}>
